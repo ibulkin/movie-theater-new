@@ -19,14 +19,14 @@ export const GameBuy = ({ game }) => {
   };
 
   return (
-    <div className="game-buy">
-      <span className="game-buy__price">{game.price} руб.</span>
-      <Button
-        type={isItemInCart ? "secondary" : "primary" }
-        onClick={handleClick}
-      >
-        {isItemInCart ? "Убрать из корзины" : "В Корзину"}
-      </Button>
-    </div>
-  );
+		<div className='game-buy'>
+			<span className='game-buy__price'>{game.price} руб.</span>
+			<Button
+				type={isItemInCart ? 'secondary' : 'primary'}
+				onClick={handleClick}
+			>
+				{isItemInCart ? 'Remove from Favorites' : 'Add to Favorites'}
+			</Button>
+		</div>
+	)
 };

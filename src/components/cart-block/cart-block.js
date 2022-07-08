@@ -22,7 +22,7 @@ export const CartBlock = () => {
 			<ItemsInCart quantity={items.length} />
 			<MdFavorite
 				color='white'
-				size={25}
+				size={35}
 				className='cart-icon'
 				onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}
 			/>
