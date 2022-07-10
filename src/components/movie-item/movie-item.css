@@ -1,0 +1,42 @@
+.movie-item {
+	text-decoration: none;
+	color: white;
+	width: 200px;
+	height: 320px;
+	background-color: rgb(36, 37, 41);
+	border: 2px solid red;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+}
+
+.movie-item:not(:last-child) {
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+
+.movie-item__title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.movie-item__genre {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movie-item__details {
+	padding: 10px 20px;
+}
+
+.movie-item__description {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.movie-item__buy {
+	position: absolute;
+	right: 0;
+	bottom: -12px;
+}
