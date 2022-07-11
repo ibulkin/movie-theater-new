@@ -19,7 +19,6 @@ export const OrderItem = ({ movie }) => {
 				<span> {movie.title} </span>
 			</div>
 			<div className='order-item__price'>
-				<span>{movie.price} руб.</span>
 				<AiOutlineCloseCircle
 					size={25}
 					className='cart-item__delete-icon'

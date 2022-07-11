@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { OrderItem } from '../../components/order-item'
-import { calcTotalPrice, enumerate } from '../../components/utils'
 import './order-page.css'
 
 export const OrderPage = () => {
@@ -22,8 +21,7 @@ export const OrderPage = () => {
 				<div className='order-page__total-price'>
 					<span>
 						{items.length}{' '}
-						{enumerate(items.length, ['товар', 'товара', 'товаров'])} на сумму{' '}
-						{calcTotalPrice(items)} руб.
+						Moves
 					</span>
 				</div>
 			</div>

@@ -21,13 +21,13 @@ export const CartBlock = () => {
 		<div className='cart-block'>
 			<ItemsInCart quantity={items.length} />
 			<MdFavorite
-				color='white'
+				color='red'
 				size={35}
 				className='cart-icon'
 				onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}
 			/>
 			{totalPrice > 0 ? (
-				<span className='total-price'>{totalPrice} руб.</span>
+				<span className='total-price'></span>
 			) : null}
 			{isCartMenuVisible && <CartMenu onClick={handleGoToOrderClick} />}
 		</div>
