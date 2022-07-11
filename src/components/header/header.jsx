@@ -1,19 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { CartBlock } from '../cart-block'
+import { FavoriteBlock } from '../favorite-block'
 import './header.css'
-
 
 export const Header = () => {
 	return (
 		<div className='header'>
 			<div className='wrapper'>
 				<Link to='/' className='header__store-title'>
-			Movie Theater
+					Movie Theater
 				</Link>
 			</div>
-			<div className='wrapper header__cart-btn-wrapper'>
-				<CartBlock />
+			<div className='wrapper header__favorite-btn-wrapper'>
+				<FavoriteBlock />
 			</div>
 		</div>
 	)

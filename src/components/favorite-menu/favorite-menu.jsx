@@ -1,17 +1,17 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Button } from '../button'
-import { CartItem } from '../cart-item'
-import './cart-menu.css'
+import { FavoriteItem } from '../favorite-item'
+import './favorite-menu.css'
 
-export const CartMenu = ({ onClick }) => {
-	const items = useSelector(state => state.cart.itemsInCart)
+export const FavoriteMenu = ({ onClick }) => {
+	const items = useSelector(state => state.favorite.itemsInFavorite)
 	return (
-		<div className='cart-menu'>
-			<div className='cart-menu__movies-list'>
+		<div className='favorite-menu'>
+			<div className='favorite-menu__movies-list'>
 				{items.length > 0
 					? items.map(movie => (
-							<CartItem
+							<FavoriteItem
 								key={movie.image}
 								image={movie.image}
 								price={movie.price}
@@ -19,12 +19,11 @@ export const CartMenu = ({ onClick }) => {
 								id={movie.id}
 							/>
 					  ))
-					: 'Корзина пуста'}
+					: "you don't have a favorite"}
 			</div>
 			{items.length > 0 ? (
-				<div className='cart-menu__arrange'>
-					<div className='cart-menu__total-price'>
-					</div>
+				<div className='favorite-menu__arrange'>
+					<div className='favorite-menu__total-price'></div>
 					<Button type='primary' size='m' onClick={onClick}>
 						Favorites
 					</Button>

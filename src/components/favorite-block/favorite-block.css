@@ -1,4 +1,4 @@
-.cart-block {
+.favorite-block {
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -10,9 +10,7 @@
 	font-weight: bold;
 }
 
-.cart-icon {
+.favorite-icon {
 	cursor: pointer;
 	position: relative;
-    color: red;
-
 }

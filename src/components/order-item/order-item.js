@@ -3,12 +3,12 @@ import { useDispatch } from 'react-redux'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { MovieCover } from '../movie-cover/movie-cover'
 import './order-item.css'
-import { deleteItemFromCart } from '../../store/cart/reducer'
+import { deleteItemFromFavorite } from '../../store/favorite/reducer'
 
 export const OrderItem = ({ movie }) => {
 	const dispatch = useDispatch()
 	const handleDeleteClick = () => {
-		dispatch(deleteItemFromCart(movie.id))
+		dispatch(deleteItemFromFavorite(movie.id))
 	}
 	return (
 		<div className='order-item'>
@@ -21,7 +21,7 @@ export const OrderItem = ({ movie }) => {
 			<div className='order-item__price'>
 				<AiOutlineCloseCircle
 					size={25}
-					className='cart-item__delete-icon'
+					className='favorite-item__delete-icon'
 					onClick={handleDeleteClick}
 				/>
 			</div>

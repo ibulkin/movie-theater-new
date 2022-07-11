@@ -4,10 +4,10 @@ import { OrderItem } from '../../components/order-item'
 import './order-page.css'
 
 export const OrderPage = () => {
-	const items = useSelector(state => state.cart.itemsInCart)
+	const items = useSelector(state => state.favorite.itemsInFavorite)
 
 	if (items.length < 1) {
-		return <h1>Ваша корзина пуста!</h1>
+		return <h1>you don't have a favorite</h1>
 	}
 
 	return (
@@ -19,10 +19,7 @@ export const OrderPage = () => {
 			</div>
 			<div className='order-page__right'>
 				<div className='order-page__total-price'>
-					<span>
-						{items.length}{' '}
-						Moves
-					</span>
+					<span>{items.length} Moves</span>
 				</div>
 			</div>
 		</div>

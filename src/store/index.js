@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import moviesReducer from './movies/reducer'
-import cartReducer from './cart/reducer'
+import favoriteReducer from './favorite/reducer'
 
 export const store = configureStore({
 	reducer: {
 		movies: moviesReducer,
-		cart: cartReducer,
+		favorite: favoriteReducer,
 	},
 })

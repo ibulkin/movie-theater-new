@@ -19,7 +19,7 @@
 	font-weight: bold;
 }
 
-.header__cart-btn-wrapper {
+.header__favorite-btn-wrapper {
 	justify-content: flex-end;
-    color: red;
+	color: red;
 }
