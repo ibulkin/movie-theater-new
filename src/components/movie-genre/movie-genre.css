@@ -1,11 +1,10 @@
 .movie-genre {
-	background-color: rgb(80, 82, 84);
-	padding: 2px 4px;
+	/* background-color: rgb(80, 82, 84); */
+	padding: 2px;
 	font-size: 10px;
-	border-radius: 2px;
 }
 
-.movie-genre:not(:last-child) {
+/* .movie-genre:not(:last-child) {
 	margin-right: 8px;
 	margin-bottom: 8px;
-}
+} */
