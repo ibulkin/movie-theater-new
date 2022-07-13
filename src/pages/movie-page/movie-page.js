@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { MovieBuy } from '../../components/movie-buy'
-import { MovieCover } from '../../components/movie-cover/movie-cover'
 import { MovieGenre } from '../../components/movie-genre'
 import './movie-page.css'
 
@@ -17,7 +16,7 @@ export const MoviePage = () => {
 				<div className='movie-page__left'>
 					<iframe
 						width='90%'
-						height='400px'
+						height='500px'
 						src={movie.video}
 						title='YouTube video player'
 						frameBorder='0'
@@ -25,7 +24,6 @@ export const MoviePage = () => {
 					></iframe>
 				</div>
 				<div className='movie-page__right'>
-					<MovieCover image={movie.image} />
 					<p>{movie.description}</p>
 					<p className='secondary-text'></p>
 					{movie.genres.map(genre => (
