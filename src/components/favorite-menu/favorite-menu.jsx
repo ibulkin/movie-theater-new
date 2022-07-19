@@ -14,7 +14,6 @@ export const FavoriteMenu = ({ onClick }) => {
 							<FavoriteItem
 								key={movie.image}
 								image={movie.image}
-								price={movie.price}
 								title={movie.title}
 								id={movie.id}
 							/>

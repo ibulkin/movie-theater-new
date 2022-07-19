@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Button } from '../button'
+import { MdFavorite } from 'react-icons/md'
 import {
 	setItemInFavorite,
 	deleteItemFromFavorite,
@@ -24,12 +24,15 @@ export const MovieBuy = ({ movie }) => {
 	return (
 		<div className='movie-buy'>
 			<span className='movie-buy__price'>{movie.price} </span>
-			<Button
+			<MdFavorite
+				color='red'
+				size={35}
+				className='favorite-icon'
 				type={isItemInFavorite ? 'secondary' : 'primary'}
 				onClick={handleClick}
 			>
-				{isItemInFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
-			</Button>
+				{isItemInFavorite ? '-' : '+'}
+			</MdFavorite>
 		</div>
 	)
 }
